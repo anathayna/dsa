@@ -67,7 +67,71 @@ nums = [] # sequenced data types
 
 nums.append(21)
 nums.append(42.5)
-nums.append("string")
-
+nums.append("string") # can be homogeneous or not
 print(nums)
+
+list = [1, "a", "string", 1+2]
+print(list)
+list.append(6)
+print(list)
+list.pop()
+print(list)
+print(list[1])
+print("\n")
+
+
+
+print("### tuples ###")
+
+tuple = (1, "a", "string", 1+2) # immutable
+print(tuple)
+print(tuple[1])
+print("\n")
+
+
+
+print("### looping ###") # or iterations
+
+i = 1
+while (i < 10):
+    print(i)
+    i += 1
+print("\n")
+
+s = "hello world"
+for i in s:
+    print(i)
+print("\n")
+
+list = [1, 4, 5, 7, 8, 9]
+for i in list:
+    print(i)
+print("\n")
+
+for i in range(0, 10):
+    print(i)
+print("\n")
+
+
+
+print("### dictionary ###") # similar to hash
+
+d = dict() # or d = {}
+
+d['xyz'] = 123
+d['abc'] = 345
+
+print(d)
+print(d.keys())
+print(d.values())
+
+for i in d:
+    print("%s %d" %(i, d[i]))
+
+for index, key in enumerate(d):
+    print(index, key, d[key])
+
+print('xyz' in d)
+del d['xyz']
+print('xyz' in d)
 print("\n")
