@@ -1,5 +1,4 @@
 /*
-
 Given a string str, the task is to find the longest substring which is a palindrome. 
 If there are multiple answers, then return the first appearing substring.
 
@@ -18,5 +17,4 @@ Output: “a”
 
 Input: str = “” 
 Output: “”
-
 */
