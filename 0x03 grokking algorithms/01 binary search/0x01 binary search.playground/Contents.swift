@@ -5,17 +5,17 @@ func binarySearch(_ array: [Int], _ item: Int) -> Int? {
     var high = array.count-1 // last item (index) ex.: 5 items in array -> high = 4 -> [0,1,2,3,4]
     
     while low <= high {
-        let half = (high + low) / 2
-        let guess = array[half]
+        let mid = (high + low) / 2
+        let guess = array[mid]
         
         if guess == item {
-            return half
+            return mid
         }
         
         if guess > item {
-            high = half - 1
+            high = mid - 1
         } else {
-            low = half + 1
+            low = mid + 1
         }
     }
     
@@ -39,3 +39,4 @@ let array = [
 ]
 
 binarySearch(array, 42)
+binarySearch(array, -1)
